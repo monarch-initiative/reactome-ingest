@@ -1,7 +1,7 @@
 import uuid
-import koza
-from biolink_model.datamodel.pydanticmodel_v2 import GeneToPathwayAssociation, AgentTypeEnum, KnowledgeLevelEnum
 
+import koza
+from biolink_model.datamodel.pydanticmodel_v2 import AgentTypeEnum, GeneToPathwayAssociation, KnowledgeLevelEnum
 
 # Species mapping from reactome_id_mapping.yaml
 SPECIES_MAPPING = {
@@ -39,7 +39,7 @@ def transform_record(koza_transform, row):
     if species not in SPECIES_MAPPING:
         return []
 
-    gene_id = 'NCBIGene:' + row["component"]
+    gene_id = "NCBIGene:" + row["component"]
     pathway_id = "Reactome:" + row["pathway_id"]
 
     go_evidence_code = row["go_ecode"]

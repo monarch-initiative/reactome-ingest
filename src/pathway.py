@@ -1,7 +1,6 @@
 import koza
 from biolink_model.datamodel.pydanticmodel_v2 import Pathway
 
-
 # Species mapping from reactome_id_mapping.yaml
 SPECIES_MAPPING = {
     "Homo sapiens": "NCBITaxon:9606",
@@ -23,7 +22,7 @@ SPECIES_MAPPING = {
 
 @koza.transform_record()
 def transform_record(koza_transform, row):
-    species = row['species']
+    species = row["species"]
 
     # Skip if species not in our mapping
     if species not in SPECIES_MAPPING:

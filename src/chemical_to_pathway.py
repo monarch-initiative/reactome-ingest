@@ -1,7 +1,11 @@
 import uuid
-import koza
-from biolink_model.datamodel.pydanticmodel_v2 import ChemicalEntityToPathwayAssociation, AgentTypeEnum, KnowledgeLevelEnum
 
+import koza
+from biolink_model.datamodel.pydanticmodel_v2 import (
+    AgentTypeEnum,
+    ChemicalEntityToPathwayAssociation,
+    KnowledgeLevelEnum,
+)
 
 # Species mapping from reactome_id_mapping.yaml
 SPECIES_MAPPING = {
