@@ -30,9 +30,9 @@ jobs:
 
       - name: Run transforms
         run: |
-          # Run all transforms and collect output
-          for yaml in *.yaml; do
-            if [ "$yaml" != "download.yaml" ] && [ -f "${yaml%.yaml}.py" ]; then
+          # Run all transforms from src/
+          for yaml in src/*.yaml; do
+            if [ -f "${yaml%.yaml}.py" ]; then
               echo "Running transform: $yaml"
               uv run koza transform "$yaml" || true
             fi
