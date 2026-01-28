@@ -1,0 +1,28 @@
+name: 'reactome_gene_to_pathway'
+
+reader:
+  files:
+    - '../data/NCBI2Reactome.txt'
+  format: 'csv'
+  delimiter: '\t'
+  header_mode: 'none'
+  columns:
+    - 'component'
+    - 'pathway_id'
+    - 'pathway_iri'
+    - 'pathway_label'
+    - 'go_ecode'
+    - 'species_nam'
+
+writer:
+  edge_properties:
+    - 'id'
+    - 'category'
+    - 'subject'
+    - 'predicate'
+    - 'object'
+    - 'has_evidence'
+    - 'aggregator_knowledge_source'
+    - 'primary_knowledge_source'
+    - 'knowledge_level'
+    - 'agent_type'

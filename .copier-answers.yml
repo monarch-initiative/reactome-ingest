@@ -1,0 +1,11 @@
+_commit: 16a9d63
+_src_path: /Users/kschaper/Monarch/kozahub/cookiecutter-monarch-ingest
+copyright_year: '2026'
+email: my-name@my-org.org
+full_name: My Name
+github_handle: monarch-initiative
+github_org: monarch-initiative
+license: BSD-3-Clause
+project_description: Koza ingest for Reactome pathway data
+project_name: reactome-ingest
+project_slug: reactome_ingest

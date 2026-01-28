@@ -1,0 +1,9 @@
+# Download configuration for reactome-ingest
+
+downloads:
+  - url: "https://reactome.org/download/current/ReactomePathways.txt"
+    local_name: "data/ReactomePathways.txt"
+  - url: "https://reactome.org/download/current/NCBI2Reactome.txt"
+    local_name: "data/NCBI2Reactome.txt"
+  - url: "https://reactome.org/download/current/ChEBI2Reactome.txt"
+    local_name: "data/ChEBI2Reactome.txt"
