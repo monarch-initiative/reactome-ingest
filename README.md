@@ -1,4 +1,4 @@
-# reactome-ingest
+# Reactome
 
 Reactome is a free, open-source, curated and peer reviewed pathway database. Our goal is to provide intuitive bioinformatics tools for the visualization, interpretation and analysis of pathway knowledge to support basic research, genome analysis, modeling, systems biology and education.
 
@@ -55,40 +55,6 @@ This ingest uses Reactome's chemical to pathway download file, which contains al
     - object (pathway.id)
     - aggregating_knowledge_source (`["infores:monarchinitiative"]`)
     - primary_knowledge_source (`infores:reactome`)
-
-## Setup
-
-```bash
-just setup
-```
-
-## Usage
-
-### Download source data
-
-```bash
-just download
-```
-
-### Run transforms
-
-```bash
-# Run all transforms
-just transform-all
-
-# Run specific transform
-just transform <transform_name>
-```
-
-### Run tests
-
-```bash
-just test
-```
-
-## Adding New Ingests
-
-Use the `create-koza-ingest` Claude skill to add new ingests to this repository.
 
 ## Citation
 
