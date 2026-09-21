@@ -1,4 +1,3 @@
-import uuid
 
 import koza
 from biolink_model.datamodel.pydanticmodel_v2 import AgentTypeEnum, GeneToPathwayAssociation, KnowledgeLevelEnum
@@ -46,7 +45,6 @@ def transform_record(koza_transform, row):
     evidence_code_term = EVIDENCE_MAPPING.get(go_evidence_code, go_evidence_code)
 
     association = GeneToPathwayAssociation(
-        id="uuid:" + str(uuid.uuid1()),
         subject=gene_id,
         predicate="biolink:participates_in",
         object=pathway_id,
