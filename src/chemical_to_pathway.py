@@ -1,4 +1,3 @@
-import uuid
 
 import koza
 from biolink_model.datamodel.pydanticmodel_v2 import (
@@ -50,7 +49,6 @@ def transform_record(koza_transform, row):
     evidence_code_term = EVIDENCE_MAPPING.get(go_evidence_code, go_evidence_code)
 
     association = ChemicalEntityToPathwayAssociation(
-        id="uuid:" + str(uuid.uuid1()),
         subject=chemical_id,
         predicate="biolink:participates_in",
         object=pathway_id,
